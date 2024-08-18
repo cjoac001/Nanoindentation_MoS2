@@ -1,0 +1,2 @@
+REAX 2023.103  RunTime: Jul21-2024 21:24:29  ShM Nodes: 1  Procs: 10
+ Iteration Nmol    Time(fs) Epot(kcal/mol)  Vol(A^3)      T(K)       Pres(MPa)  Dens(kg/dm3)  Elap
