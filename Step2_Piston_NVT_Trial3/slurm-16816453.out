@@ -1,0 +1,352 @@
+Sun Jul 21 21:26:06 EDT 2024
+Loading compiler version 2023.0.0
+Loading tbb version 2021.8.0
+Loading compiler-rt version 2023.0.0
+Loading oclfpga version 2023.0.0
+  Load "debugger" to debug DPC++ applications with the gdb-oneapi debugger.
+  Load "dpl" for additional DPC++ APIs: https://github.com/oneapi-src/oneDPL
+Loading mpi version 2021.8.0
+Created iopt in unit 20; assume normal run
+Touched unit 9 (outres)
+
+
+ Parallel Execution: Process Information
+ ==============================================================================
+ Rank   Node Name                              NodeID   MyNodeRank  NodeMaster
+    0   p-bc-5087                                 0          0          0
+    1   p-bc-5087                                 0          1         -1
+    2   p-bc-5087                                 0          2         -1
+    3   p-bc-5087                                 0          3         -1
+    4   p-bc-5087                                 0          4         -1
+    5   p-bc-5087                                 0          5         -1
+    6   p-bc-5087                                 0          6         -1
+    7   p-bc-5087                                 0          7         -1
+    8   p-bc-5087                                 0          8         -1
+    9   p-bc-5087                                 0          9         -1
+ ==============================================================================
+
+
+May use up to 30657MB of RAM as shared memory on node 0
+ MPI rank    1: Number of processors available to this process:      1
+ MPI rank    4: Number of processors available to this process:      1
+ MPI rank    4: Default max number of OpenMP threads:                1
+ MPI rank    4: The OMP_NUM_THREADS environment variable is not set!
+ MPI rank    1: Default max number of OpenMP threads:                1
+ MPI rank    1: The OMP_NUM_THREADS environment variable is not set!
+ MPI rank    6: Number of processors available to this process:      1
+ MPI rank    6: Default max number of OpenMP threads:                1
+ MPI rank    6: The OMP_NUM_THREADS environment variable is not set!
+ MPI rank    0: Number of processors available to this process:      1
+ MPI rank    0: Default max number of OpenMP threads:                1
+ MPI rank    0: The OMP_NUM_THREADS environment variable is not set!
+ MPI rank    2: Number of processors available to this process:      1
+ MPI rank    2: Default max number of OpenMP threads:                1
+ MPI rank    2: The OMP_NUM_THREADS environment variable is not set!
+ MPI rank    8: Number of processors available to this process:      1
+ MPI rank    8: Default max number of OpenMP threads:                1
+ MPI rank    8: The OMP_NUM_THREADS environment variable is not set!
+ MPI rank    9: Number of processors available to this process:      1
+ MPI rank    9: Default max number of OpenMP threads:                1
+ MPI rank    9: The OMP_NUM_THREADS environment variable is not set!
+ MPI rank    7: Number of processors available to this process:      1
+ MPI rank    7: Default max number of OpenMP threads:                1
+ MPI rank    7: The OMP_NUM_THREADS environment variable is not set!
+ MPI rank    3: Number of processors available to this process:      1
+ MPI rank    3: Default max number of OpenMP threads:                1
+ MPI rank    3: The OMP_NUM_THREADS environment variable is not set!
+ MPI rank    5: Number of processors available to this process:      1
+ MPI rank    5: Default max number of OpenMP threads:                1
+ MPI rank    5: The OMP_NUM_THREADS environment variable is not set!
+
+ *******************************************************************************
+ *                                                                             *
+ *  --------------------------------                                           *
+ *   Amsterdam Modeling Suite (AMS)              2023.103                      *
+ *  --------------------------------                                           *
+ *                                               r114206 2023-08-04            *
+ *                                                                             *
+ *                                                                             *
+ *                             ===================                             *
+ *                             |                 |                             *
+ *                             |     R E A X     |                             *
+ *                             |                 |                             *
+ *                             ===================                             *
+ *                                                                             *
+ *                                                                             *
+ *   Online information and documentation:  https://www.scm.com/support/       *
+ *   E-mail:  support@scm.com   info@scm.com                                   *
+ *                                                                             *
+ *   Scientific publications using AMS results must be properly referenced     *
+ *   See the User Manuals (or the web site) for recommended citations          *
+ *   The terms and conditions of the End User License Agreement apply to       *
+ *   the use of AMS, https://www.scm.com/license-terms/                        *
+ *                                                                             *
+ **********************  x86_64_linux_intel / intelmpi  ************************
+ 
+ Licensed to: Dr. Adri van Duin / Site license Penn State / University Park / PA / USA 2024-04-29 15:35:06
+ SCM User ID: u20919
+  
+ REAX 2023.103  RunTime: Jul21-2024 21:26:08  ShM Nodes: 1  Procs: 10
+
+ Temporary files are created in /tmp/kid_0.1055269075 (0x58465342)
+
+
+ Communication costs MPI_COMM_WORLD:      2.098 usec per message,   0.0240 usec per 8-byte item
+ Communication costs for intra-node:      2.079 usec per message,   0.0240 usec per 8-byte item
+
+Force field identifier: Reactive MD-force field: 5/25/2022 Preli
+ Triple bond stabilization enabled for C-O only
+ Non-bonding interaction type[nonbontype]:
+ Inner wall, shielding:
+ Using original formula for torsion angles that has discontinuties
+ Before removing unused force-field parameters we have:
+          54  covalent bond types
+         130  valence angle types
+          57  torsion angle types
+           4  hydrogen bond types
+ The following atom types will be used: C  S  Mo
+ After removing unused force-field parameters we have:
+           9  covalent bond types
+          13  valence angle types
+          11  torsion angle types
+           0  hydrogen bond types
+Geometry identifier: 63.84440000 55.29160                    
+Rank   volume(%)   N atoms
+   0       18.08       302
+   1       18.00       303
+   2        6.16       313
+   3        6.14       298
+   4        0.85       297
+   5        0.85       308
+   6        2.13       300
+   7        2.13       308
+   8       22.88       302
+   9       22.78       295
+Unit cell division (XYZ):    2    1    5
+My region size in cell units  0.50100000  1.00000000  0.36080000
+Ghost region in cell units    0.19578851  0.22607412  0.12500000
+Total space in cell units     0.89257702  1.45214825  0.61080000
+ Local atoms:         302 , including ghost atoms:        1346
+ Local Verlet list:       59938 local (incl my-other) pairs,         0 self-pairs     23980 foreign my-other pairs,     30562 foreign other-other pairs
+     Total cpu time:       0.00
+  Total system time:       0.00
+ Total elapsed time:       0.00
+ 
+================================================================================
+   User CPU   Sys CPU   Elapsed   Ncall   Timer Name
+================================================================================
+      0.00      0.00      0.00       1   reax
+    827.47     89.16    919.14        pp/reax
+      0.03      0.03      0.11       1   reax/ppinit
+      0.00      0.00      0.00        pp/reax/ppinit
+      0.00      0.00      0.00       1   reax/reac
+    827.47     89.16    919.14        pp/reax/reac
+      0.03      0.01      0.04       1   reax/reac/CreateVerletList
+      0.03      0.01      0.04        pp/reax/reac/CreateVerletList
+      0.01      0.00      0.01       1   reax/reac/Crea/DistributeAtoms2
+      0.01      0.00      0.01        pp/reax/reac/Crea/DistributeAtoms2
+      0.01      0.00      0.01       1   reax/reac/Crea/Dist/pp
+      0.01      0.00      0.01        pp/reax/reac/Crea/Dist/pp
+      0.01      0.00      0.01       1   reax/reac/Crea/Dist/pp/MakeNeighborList
+      0.01      0.00      0.01        pp/reax/reac/Crea/Dist/pp/MakeNeighborList
+      0.01      0.00      0.01       1   reax/reac/Crea/Dist/pp/Make/pp
+      0.01      0.00      0.01        pp/reax/reac/Crea/Dist/pp/Make/pp
+      0.01      0.00      0.01       1   reax/reac/Crea/Dist/pp/Make/pp/NeighborList
+      0.01      0.00      0.01        pp/reax/reac/Crea/Dist/pp/Make/pp/NeighborList
+      0.00      0.00      0.00       1   reax/reac/Crea/Dist/pp/Make/pp/Neig/AtomsOverCells
+      0.00      0.00      0.00        pp/reax/reac/Crea/Dist/pp/Make/pp/Neig/AtomsOverCells
+      0.02      0.01      0.03       1   reax/reac/Crea/pp
+      0.02      0.01      0.03        pp/reax/reac/Crea/pp
+    149.09     10.11    159.69   18157   reax/reac/srtbon1
+    148.64     10.10    159.22        pp/reax/reac/srtbon1
+    148.64     10.10    159.22   36314   reax/reac/srtb/pp
+    148.64     10.10    159.22        pp/reax/reac/srtb/pp
+      6.39      0.03      6.45   18157   reax/reac/srtb/pp/ConnTable
+      6.39      0.03      6.45        pp/reax/reac/srtb/pp/ConnTable
+    680.01     79.15    761.25   18157   reax/reac/encalc
+    662.53     78.66    743.15        pp/reax/reac/encalc
+      0.09      0.03      0.14       1   reax/reac/enca/pp
+      0.09      0.03      0.14        pp/reax/reac/enca/pp
+      0.01      0.00      0.01       1   reax/reac/enca/pp/charges
+      0.01      0.00      0.01        pp/reax/reac/enca/pp/charges
+      0.01      0.00      0.01       1   reax/reac/enca/pp/char/chargest_sparse4
+      0.01      0.00      0.01        pp/reax/reac/enca/pp/char/chargest_sparse4
+      0.01      0.00      0.01       1   reax/reac/enca/pp/char/char/pp
+      0.01      0.00      0.01        pp/reax/reac/enca/pp/char/char/pp
+      0.01      0.00      0.01       1   reax/reac/enca/pp/char/char/pp/cgsolve_square_minus1
+      0.01      0.00      0.01        pp/reax/reac/enca/pp/char/char/pp/cgsolve_square_minus1
+      0.00      0.00      0.00       1   reax/reac/enca/pp/char/char/pp/cgso/MakeSendRecvLists
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/char/char/pp/cgso/MakeSendRecvLists
+      0.00      0.00      0.00      45   reax/reac/enca/pp/char/char/pp/cgso/dcsrgemv
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/char/char/pp/cgso/dcsrgemv
+      0.00      0.00      0.00      44   reax/reac/enca/pp/char/char/pp/cgso/comm
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/char/char/pp/cgso/comm
+      0.00      0.00      0.00      44   reax/reac/enca/pp/char/char/pp/cgso/reduce
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/char/char/pp/cgso/reduce
+      0.00      0.00      0.00       1   reax/reac/enca/pp/char/char/pp/cgso/ppgdvc
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/char/char/pp/cgso/ppgdvc
+      0.00      0.00      0.00       1   reax/reac/enca/pp/char/char/pp/cgso/ppgd/ww
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/char/char/pp/cgso/ppgd/ww
+      0.00      0.00      0.00       1   reax/reac/enca/pp/NewEReaxff
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/NewEReaxff
+      0.00      0.00      0.00       1   reax/reac/enca/pp/elepos
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/elepos
+      0.00      0.00      0.00       1   reax/reac/enca/pp/elep/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/elep/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/boncor
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/boncor
+      0.00      0.00      0.00       1   reax/reac/enca/pp/bonc/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/bonc/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/covbon
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/covbon
+      0.00      0.00      0.00       1   reax/reac/enca/pp/covb/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/covb/pp
+      0.00      0.00      0.00       5   reax/reac/enca/pp/BO2Atoms
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/BO2Atoms
+      0.00      0.00      0.00       5   reax/reac/enca/pp/BO2A/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/BO2A/pp
+      0.02      0.00      0.02       7   reax/reac/enca/pp/CombineAndAddForce
+      0.02      0.00      0.02        pp/reax/reac/enca/pp/CombineAndAddForce
+      0.02      0.00      0.02       8   reax/reac/enca/pp/Comb/pp
+      0.02      0.00      0.02        pp/reax/reac/enca/pp/Comb/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/lonpar
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/lonpar
+      0.00      0.00      0.00       1   reax/reac/enca/pp/lonp/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/lonp/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/ovcor
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/ovcor
+      0.00      0.00      0.00       1   reax/reac/enca/pp/ovco/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/ovco/pp
+      0.00      0.00      0.00       4   reax/reac/enca/pp/vlgrad
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/vlgrad
+      0.00      0.00      0.00       4   reax/reac/enca/pp/vlgr/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/vlgr/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/srtang
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/srtang
+      0.00      0.00      0.00       1   reax/reac/enca/pp/srta/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/srta/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/srttor
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/srttor
+      0.00      0.00      0.00       1   reax/reac/enca/pp/srtt/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/srtt/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/srthb
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/srthb
+      0.00      0.00      0.00       1   reax/reac/enca/pp/srth/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/srth/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/valang
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/valang
+      0.00      0.00      0.00       1   reax/reac/enca/pp/vala/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/vala/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/hbond
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/hbond
+      0.00      0.00      0.00       1   reax/reac/enca/pp/hbon/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/hbon/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/torang
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/torang
+      0.00      0.00      0.00       1   reax/reac/enca/pp/tora/pp
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/tora/pp
+      0.01      0.00      0.01       2   reax/reac/enca/pp/nonbon
+      0.01      0.00      0.01        pp/reax/reac/enca/pp/nonbon
+      0.01      0.00      0.01       2   reax/reac/enca/pp/nonb/pp
+      0.01      0.00      0.01        pp/reax/reac/enca/pp/nonb/pp
+      0.00      0.00      0.00       1   reax/reac/enca/pp/CombineAndAddEnergy
+      0.00      0.00      0.00        pp/reax/reac/enca/pp/CombineAndAddEnergy
+      0.00      0.00      0.00       1   reax/reac/ConnTable
+      0.00      0.00      0.00        pp/reax/reac/ConnTable
+      0.00      0.00      0.00       2   reax/reac/pp
+      0.00      0.00      0.00        pp/reax/reac/pp
+      0.00      0.00      0.00       2   reax/reac/pp/GatherTotalConnTable
+      0.00      0.00      0.00        pp/reax/reac/pp/GatherTotalConnTable
+      0.00      0.00      0.00       2   reax/reac/pp/Gath/pp
+      0.00      0.00      0.00        pp/reax/reac/pp/Gath/pp
+      0.00      0.00      0.00      14   reax/reac/pp/Gath/pp/ppNodeBarrier
+      0.00      0.00      0.00        pp/reax/reac/pp/Gath/pp/ppNodeBarrier
+      0.00      0.00      0.00       2   reax/reac/pp/FindMolecules
+      0.00      0.00      0.00        pp/reax/reac/pp/FindMolecules
+     16.39      0.40     16.87   18156   reax/reac/UpdVlistDist
+     16.27      0.40     16.73        pp/reax/reac/UpdVlistDist
+     16.27      0.40     16.73   18156   reax/reac/UpdV/pp
+     16.27      0.40     16.73        pp/reax/reac/UpdV/pp
+      3.82      0.16      3.99   18156   reax/reac/enca/ConnTable
+      0.00      0.00      0.00        pp/reax/reac/enca/ConnTable
+     42.96      5.10     48.22   18156   reax/reac/enca/boncor
+     42.85      5.09     48.09        pp/reax/reac/enca/boncor
+     42.85      5.09     48.09   18156   reax/reac/enca/bonc/pp
+     42.85      5.09     48.09        pp/reax/reac/enca/bonc/pp
+      0.07      0.00      0.07   18156   reax/reac/enca/NewEReaxff
+      0.00      0.00      0.00        pp/reax/reac/enca/NewEReaxff
+      0.39      0.01      0.41   18156   reax/reac/enca/elepos
+      0.33      0.01      0.34        pp/reax/reac/enca/elepos
+      0.33      0.01      0.34   18156   reax/reac/enca/elep/pp
+      0.33      0.01      0.34        pp/reax/reac/enca/elep/pp
+      0.05      0.00      0.05   18156   reax/reac/enca/memalloc
+      0.00      0.00      0.00        pp/reax/reac/enca/memalloc
+      0.93      0.03      0.96   18156   reax/reac/enca/covbon
+      0.85      0.03      0.88        pp/reax/reac/enca/covbon
+      0.85      0.03      0.88   18156   reax/reac/enca/covb/pp
+      0.85      0.03      0.88        pp/reax/reac/enca/covb/pp
+      1.61      0.05      1.68   18156   reax/reac/enca/lonpar
+      1.54      0.05      1.59        pp/reax/reac/enca/lonpar
+      1.54      0.05      1.59   18156   reax/reac/enca/lonp/pp
+      1.54      0.05      1.59        pp/reax/reac/enca/lonp/pp
+      5.49      0.22      5.74   18156   reax/reac/enca/ovcor
+      5.41      0.21      5.65        pp/reax/reac/enca/ovcor
+      5.41      0.21      5.65   18156   reax/reac/enca/ovco/pp
+      5.41      0.21      5.65        pp/reax/reac/enca/ovco/pp
+      1.39      0.05      1.45   18156   reax/reac/enca/srtang
+      1.31      0.05      1.36        pp/reax/reac/enca/srtang
+      1.31      0.05      1.36   18156   reax/reac/enca/srta/pp
+      1.31      0.05      1.36        pp/reax/reac/enca/srta/pp
+      4.41      0.08      4.51   18156   reax/reac/enca/srttor
+      4.33      0.08      4.42        pp/reax/reac/enca/srttor
+      4.33      0.08      4.42   18156   reax/reac/enca/srtt/pp
+      4.33      0.08      4.42        pp/reax/reac/enca/srtt/pp
+      5.21      0.08      5.31   18156   reax/reac/enca/srthb
+      5.13      0.07      5.22        pp/reax/reac/enca/srthb
+      5.13      0.07      5.22   18156   reax/reac/enca/srth/pp
+      5.13      0.07      5.22        pp/reax/reac/enca/srth/pp
+     20.81      0.15     21.03   18156   reax/reac/enca/valang
+     20.73      0.15     20.95        pp/reax/reac/enca/valang
+     20.73      0.15     20.95   18156   reax/reac/enca/vala/pp
+     20.73      0.15     20.95        pp/reax/reac/enca/vala/pp
+     42.45      0.07     42.65   18156   reax/reac/enca/torang
+     42.37      0.07     42.57        pp/reax/reac/enca/torang
+     42.37      0.07     42.57   18156   reax/reac/enca/tora/pp
+     42.37      0.07     42.57        pp/reax/reac/enca/tora/pp
+      0.11      0.00      0.11   18156   reax/reac/enca/hbond
+      0.04      0.00      0.04        pp/reax/reac/enca/hbond
+      0.04      0.00      0.04   18156   reax/reac/enca/hbon/pp
+      0.04      0.00      0.04        pp/reax/reac/enca/hbon/pp
+    103.62      0.08    104.00   18156   reax/reac/enca/nonbon
+    103.53      0.07    103.91        pp/reax/reac/enca/nonbon
+    103.53      0.07    103.91   18156   reax/reac/enca/nonb/pp
+    103.53      0.07    103.91        pp/reax/reac/enca/nonb/pp
+     22.08      0.05     22.21   18156   reax/reac/enca/vlgrad
+     21.99      0.05     22.11        pp/reax/reac/enca/vlgrad
+     21.99      0.05     22.11   18156   reax/reac/enca/vlgr/pp
+     21.99      0.05     22.11        pp/reax/reac/enca/vlgr/pp
+      4.59      0.03      4.63   18156   reax/reac/enca/BO2Atoms
+      4.50      0.03      4.54        pp/reax/reac/enca/BO2Atoms
+      4.50      0.03      4.54   18156   reax/reac/enca/BO2A/pp
+      4.50      0.03      4.54        pp/reax/reac/enca/BO2A/pp
+      0.05      0.00      0.05   18156   reax/reac/enca/efield
+      0.00      0.00      0.00        pp/reax/reac/enca/efield
+    406.31     72.53    479.99   18156   reax/reac/enca/CombineAndAddForce
+    406.21     72.52    479.87        pp/reax/reac/enca/CombineAndAddForce
+    407.52     72.66    481.34   54468   reax/reac/enca/Comb/pp
+    407.52     72.66    481.34        pp/reax/reac/enca/Comb/pp
+      1.69      0.18      1.88   18156   reax/reac/enca/CombineAndAddEnergy
+      1.32      0.14      1.47        pp/reax/reac/enca/CombineAndAddEnergy
+      0.00      0.00      0.06       1   reax/reac/mdsavkf
+      0.00      0.00      0.00        pp/reax/reac/mdsavkf
+      0.00      0.00      0.00       1   reax/reac/mdsa/pp
+      0.00      0.00      0.00        pp/reax/reac/mdsa/pp
+      0.00      0.00      0.01       1   reax/reac/mdsa/molanal
+      0.00      0.00      0.00        pp/reax/reac/mdsa/molanal
+      0.00      0.00      0.00       2   reax/reac/mdsa/mola/savemol
+      0.00      0.00      0.00        pp/reax/reac/mdsa/mola/savemol
+================================================================================
+Maximum Memory Usage:    120364 kilobytes
+================================================================================
+ NORMAL TERMINATION
+NORMAL TERMINATION

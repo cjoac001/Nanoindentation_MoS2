@@ -1,0 +1,4 @@
+#piston regimes
+#start direction   Edeep1 Rdeep1   pshft1    Rcut1   speed1
+0        z         0500.0  1.0     20.53       1.0    0.0020
+100000   z         0000.0  1.0     28.00       1.0    0.000
